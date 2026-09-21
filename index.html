@@ -11,15 +11,25 @@
         body {
             margin: 0;
             background: #ffffff;
-            color: #222;
-            font-family: Georgia, "Times New Roman", serif;
-            line-height: 1.65;
+            color: #222222;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            line-height: 1.7;
         }
 
+        /* ------------------------------
+           Header
+        ------------------------------ */
+
         .header {
-            max-width: 1100px;
+            max-width: 1180px;
             margin: 0 auto;
-            padding: 40px 30px 0 30px;
+
+            padding: 48px 40px 0 40px;
 
             display: flex;
             justify-content: space-between;
@@ -27,62 +37,81 @@
         }
 
         .name {
-            font-size: 28px;
-            letter-spacing: 1px;
+            font-size: 32px;
+            letter-spacing: 1.2px;
         }
 
         .nav {
             display: flex;
-            gap: 24px;
+            gap: 28px;
         }
 
         .nav a {
-            color: #222;
+            color: #222222;
             text-decoration: none;
-            font-size: 14px;
+
+            font-size: 16px;
         }
 
         .nav a:hover {
-            border-bottom: 1px solid #222;
+            border-bottom: 1px solid #222222;
         }
 
         .nav a.active {
-            border-bottom: 1px solid #222;
+            border-bottom: 1px solid #222222;
         }
 
+        /* ------------------------------
+           Main Layout
+        ------------------------------ */
+
         .main {
-            max-width: 900px;
-            margin: 130px auto 80px auto;
-            padding: 0 30px;
+            max-width: 1000px;
+            margin: 125px auto 90px auto;
+
+            padding: 0 40px;
 
             display: grid;
-            grid-template-columns: 320px 1fr;
-            gap: 80px;
+            grid-template-columns: 340px 1fr;
+
+            gap: 85px;
+
             align-items: start;
         }
 
+        /* ------------------------------
+           Photo
+        ------------------------------ */
+
         .photo img {
             width: 100%;
-            max-width: 320px;
+            max-width: 340px;
             height: auto;
+
             display: block;
         }
 
+        /* ------------------------------
+           About
+        ------------------------------ */
+
         .about h2 {
-            font-size: 18px;
+            font-size: 21px;
             font-weight: normal;
+
             margin-top: 0;
-            margin-bottom: 30px;
+            margin-bottom: 32px;
         }
 
         .about p {
-            font-size: 17px;
+            font-size: 19px;
+
             margin-top: 0;
-            margin-bottom: 16px;
+            margin-bottom: 19px;
         }
 
         .about a {
-            color: #222;
+            color: #222222;
             text-decoration: none;
         }
 
@@ -90,38 +119,85 @@
             text-decoration: underline;
         }
 
+        /* ------------------------------
+           Contact
+        ------------------------------ */
+
         .contact {
-            margin-top: 28px;
-            font-size: 14px;
+            margin-top: 30px;
         }
 
         .contact p {
-            font-size: 14px;
-            margin-bottom: 7px;
+            font-size: 16px;
+            margin-bottom: 8px;
         }
 
-        @media (max-width: 760px) {
+        /* ------------------------------
+           Mobile
+        ------------------------------ */
+
+        @media (max-width: 780px) {
 
             .header {
                 flex-direction: column;
+
+                gap: 20px;
+
+                padding-top: 30px;
+            }
+
+            .name {
+                font-size: 29px;
+            }
+
+            .nav {
                 gap: 18px;
+            }
+
+            .nav a {
+                font-size: 14px;
             }
 
             .main {
                 grid-template-columns: 1fr;
+
                 margin-top: 70px;
-                gap: 40px;
+
+                gap: 45px;
+
+                padding: 0 25px;
+            }
+
+            .photo {
+                text-align: center;
             }
 
             .photo img {
-                max-width: 280px;
+                max-width: 300px;
                 margin: 0 auto;
+            }
+
+            .about h2 {
+                font-size: 20px;
+            }
+
+            .about p {
+                font-size: 18px;
+            }
+
+            .contact p {
+                font-size: 15px;
             }
         }
     </style>
 </head>
 
+
 <body>
+
+    <!-- ==============================
+         Header
+    =============================== -->
 
     <header class="header">
 
@@ -130,16 +206,35 @@
         </div>
 
         <nav class="nav">
-            <a href="index.html" class="active">HOME</a>
-            <a href="#">CV</a>
-            <a href="#">RESEARCH</a>
-            <a href="#">TEACHING</a>
+
+            <a href="index.html" class="active">
+                HOME
+            </a>
+
+            <a href="#">
+                CV
+            </a>
+
+            <a href="#">
+                RESEARCH
+            </a>
+
+            <a href="#">
+                TEACHING
+            </a>
+
         </nav>
 
     </header>
 
 
+    <!-- ==============================
+         Main Content
+    =============================== -->
+
     <main class="main">
+
+        <!-- Photo -->
 
         <div class="photo">
 
@@ -150,6 +245,8 @@
 
         </div>
 
+
+        <!-- About -->
 
         <div class="about">
 
@@ -165,23 +262,27 @@
             </p>
 
             <p>
-                My research lies at the intersection of comparative politics,
-                digital politics, and political methodology, with a particular
-                focus on artificial intelligence, cybersecurity, misinformation,
-                public opinion, and political trust.
+                My research focuses on comparative politics,
+                digital politics, and political methodology,
+                particularly artificial intelligence, cybersecurity,
+                misinformation, public opinion, and political trust.
             </p>
 
             <p>
                 My current research examines how digital technologies,
-                information environments, and cyber events shape political
-                attitudes, institutional trust, and government behavior across
-                countries.
+                information environments, and cyber events shape
+                political attitudes, institutional trust, and
+                government behavior across countries.
             </p>
 
             <p>
-                Methodologically, I use causal inference, survey experiments,
-                computational social science, and quantitative methods.
+                Methodologically, I use causal inference,
+                survey experiments, computational social science,
+                and quantitative methods.
             </p>
+
+
+            <!-- Contact -->
 
             <div class="contact">
 
@@ -193,6 +294,7 @@
                 </p>
 
                 <p>
+
                     <a
                         href="https://www.linkedin.com/in/jing-tao-2b634b23a/"
                         target="_blank">
@@ -206,6 +308,7 @@
                         target="_blank">
                         GitHub
                     </a>
+
                 </p>
 
             </div>
