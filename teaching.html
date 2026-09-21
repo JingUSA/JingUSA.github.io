@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Teaching | Jing Tao</title>
+
+    <style>
+
+        /* ==============================
+           GENERAL
+        ============================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #ffffff;
+            color: #222222;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            line-height: 1.7;
+        }
+
+
+        /* ==============================
+           HEADER
+        ============================== */
+
+        .header {
+            width: 90%;
+            max-width: 1380px;
+
+            margin: 0 auto;
+            padding-top: 48px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 36px;
+            letter-spacing: 1.2px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav a {
+            color: #222222;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            border-bottom: 1px solid #222222;
+        }
+
+
+        /* ==============================
+           CONTENT
+        ============================== */
+
+        .content {
+            width: 88%;
+            max-width: 1200px;
+
+            margin: 100px auto 100px auto;
+        }
+
+        .page-title {
+            font-size: 30px;
+            font-weight: normal;
+
+            margin-top: 0;
+            margin-bottom: 55px;
+        }
+
+        .section-title {
+            font-size: 23px;
+            font-weight: normal;
+
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+
+
+        /* ==============================
+           COURSE
+        ============================== */
+
+        .course {
+            display: grid;
+            grid-template-columns: 1fr auto;
+
+            column-gap: 50px;
+
+            margin-bottom: 27px;
+        }
+
+        .course-name {
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .course-date {
+            font-size: 18px;
+            white-space: nowrap;
+        }
+
+        .institution {
+            grid-column: 1 / 2;
+
+            font-size: 17px;
+            margin-top: 2px;
+        }
+
+        .course-note {
+            grid-column: 1 / 2;
+
+            font-size: 17px;
+            margin-top: 4px;
+            color: #444444;
+        }
+
+
+        /* ==============================
+           INTRO
+        ============================== */
+
+        .intro {
+            max-width: 900px;
+
+            font-size: 19px;
+            line-height: 1.75;
+
+            margin-bottom: 45px;
+        }
+
+
+        /* ==============================
+           MOBILE
+        ============================== */
+
+        @media (max-width: 780px) {
+
+            .header {
+                width: calc(100% - 40px);
+
+                flex-direction: column;
+                gap: 20px;
+
+                padding-top: 30px;
+            }
+
+            .name {
+                font-size: 31px;
+            }
+
+            .nav {
+                gap: 18px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav a {
+                font-size: 15px;
+            }
+
+            .content {
+                width: calc(100% - 46px);
+                margin-top: 65px;
+            }
+
+            .page-title {
+                font-size: 27px;
+            }
+
+            .section-title {
+                font-size: 21px;
+            }
+
+            .course {
+                grid-template-columns: 1fr;
+                row-gap: 3px;
+            }
+
+            .course-date {
+                margin-top: 2px;
+            }
+
+            .course-name {
+                font-size: 19px;
+            }
+
+            .intro {
+                font-size: 18px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         HEADER
+    ============================== -->
+
+    <header class="header">
+
+        <div class="name">
+            JING TAO
+        </div>
+
+
+        <nav class="nav">
+
+            <a href="index.html">
+                HOME
+            </a>
+
+            <a href="Jing_Tao_CV.pdf"
+               target="_blank">
+                CV
+            </a>
+
+            <a href="research.html">
+                RESEARCH
+            </a>
+
+            <a href="teaching.html"
+               class="active">
+                TEACHING
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ==============================
+         TEACHING
+    ============================== -->
+
+    <main class="content">
+
+        <h1 class="page-title">
+            TEACHING
+        </h1>
+
+
+        <p class="intro">
+            My teaching experience at The University of Texas at Dallas
+            includes independent instruction and teaching assistance in
+            American government, comparative politics, cybersecurity,
+            quantitative methods, technology policy, and digital economics.
+        </p>
+
+
+
+        <!-- ==========================
+             INSTRUCTOR OF RECORD
+        =========================== -->
+
+        <h2 class="section-title">
+            Instructor of Record
+        </h2>
+
+
+        <div class="course">
+
+            <div class="course-name">
+                GOVT 2306: State and Local Government
+            </div>
+
+            <div class="course-date">
+                Summer 2026
+            </div>
+
+            <div class="institution">
+                The University of Texas at Dallas
+            </div>
+
+        </div>
+
+
+
+        <!-- ==========================
+             TEACHING ASSISTANT
+        =========================== -->
+
+        <h2 class="section-title">
+            Teaching Assistant
+        </h2>
+
+
+        <div class="course">
+
+            <div class="course-name">
+                PPPE 6353 / ECON 6362:
+                Industry, Technology, and Science Policy
+            </div>
+
+            <div class="course-date">
+                Spring 2026
+            </div>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-name">
+                PSCI / PPOL / ECON 4325:
+                Digital Economics and the Law
+            </div>
+
+            <div class="course-date">
+                Spring 2026
+            </div>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-name">
+                PPPE / PSCI 6303:
+                Cyber Security Policy
+            </div>
+
+            <div class="course-date">
+                Fall 2025
+            </div>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-name">
+                EPPS 6313:
+                Introduction to Quantitative Methods
+            </div>
+
+            <div class="course-date">
+                Fall 2025
+            </div>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-name">
+                GOVT 2305:
+                American National Government
+            </div>
+
+            <div class="course-date">
+                Fall 2023, Fall 2024, Spring 2025
+            </div>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-name">
+                GOVT 2306:
+                State and Local Government
+            </div>
+
+            <div class="course-date">
+                Fall 2024
+            </div>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-name">
+                PSCI 3350:
+                Comparative Politics
+            </div>
+
+            <div class="course-date">
+                Spring 2024
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>
