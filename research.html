@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Research | Jing Tao</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #ffffff;
+            color: #222222;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.7;
+        }
+
+        .header {
+            width: 90%;
+            max-width: 1380px;
+            margin: 0 auto;
+            padding-top: 48px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 36px;
+            letter-spacing: 1.2px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav a {
+            color: #222222;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            border-bottom: 1px solid #222222;
+        }
+
+        .content {
+            width: 88%;
+            max-width: 1200px;
+            margin: 100px auto;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: normal;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-top: 45px;
+            margin-bottom: 20px;
+        }
+
+        .paper {
+            margin-bottom: 30px;
+        }
+
+        .paper-title {
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .paper-meta {
+            font-size: 17px;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        .paper-desc {
+            font-size: 18px;
+            margin-top: 8px;
+            max-width: 950px;
+        }
+
+        a {
+            color: #222222;
+        }
+
+        @media (max-width: 780px) {
+            .header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav {
+                gap: 18px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .content {
+                width: calc(100% - 45px);
+                margin-top: 65px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="name">
+        JING TAO
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">HOME</a>
+        <a href="Jing_Tao_CV.pdf" target="_blank">CV</a>
+        <a href="research.html" class="active">RESEARCH</a>
+        <a href="teaching.html">TEACHING</a>
+    </nav>
+
+</header>
+
+
+<main class="content">
+
+    <h1>RESEARCH</h1>
+
+
+    <h2>Revise and Resubmit</h2>
+
+    <div class="paper">
+        <div class="paper-title">
+            The Deterrence Effect of the Budapest Convention on Cybercrime Revisited:
+            Empirical Findings and Lessons for the UN Convention
+        </div>
+
+        <div class="paper-meta">
+            Pengfei Zhang, Humza Khan, and Jing Tao
+            · R&amp;R at Journal of Cyber Policy
+        </div>
+    </div>
+
+
+    <h2>Under Review</h2>
+
+    <div class="paper">
+        <div class="paper-title">
+            When Cyber Conflict Hits Home:
+            Cyber Espionage Disclosure and Institutional Confidence
+        </div>
+
+        <div class="paper-meta">
+            Jing Tao · Under review at Comparative Political Studies
+        </div>
+    </div>
+
+
+    <h2>Working Papers</h2>
+
+    <div class="paper">
+        <div class="paper-title">
+            Holding AI Liable?
+            An Experimental Study of Public Opinion on AI Safety
+        </div>
+
+        <div class="paper-meta">
+            Jing Tao
+        </div>
+    </div>
+
+
+    <div class="paper">
+        <div class="paper-title">
+            Importing Surveillance:
+            AI Technology Transfers and Digital State Control
+        </div>
+
+        <div class="paper-meta">
+            Jing Tao
+        </div>
+    </div>
+
+
+    <h2>Computational Projects</h2>
+
+    <div class="paper">
+        <div class="paper-title">
+            Cyber Operations Incident Database (COID)
+        </div>
+
+        <div class="paper-desc">
+            A normalized relational database for cross-national analysis
+            of state-sponsored cyber activity.
+            <a href="https://github.com/JingUSA/COID" target="_blank">
+                GitHub Repository
+            </a>
+        </div>
+    </div>
+
+
+    <div class="paper">
+        <div class="paper-title">
+            The Cyber Conflict Globe:
+            Dynamic 3D Visualization of State-Linked Operations, 2005–2023
+        </div>
+
+        <div class="paper-desc">
+            Interactive spatial-temporal visualization of state-linked cyber operations.
+            <a href="https://www.youtube.com/watch?v=7BMBoaasoTU" target="_blank">
+                Video Demo
+            </a>
+        </div>
+    </div>
+
+</main>
+
+</body>
+
+</html>
