@@ -3,11 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Jing Tao</title>
 
     <style>
+
+        /* ==============================
+           GENERAL
+        ============================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             background: #ffffff;
@@ -21,15 +32,18 @@
             line-height: 1.7;
         }
 
-        /* ------------------------------
-           Header
-        ------------------------------ */
+
+        /* ==============================
+           HEADER
+        ============================== */
 
         .header {
-            max-width: 1180px;
+            width: 90%;
+            max-width: 1380px;
+
             margin: 0 auto;
 
-            padding: 48px 40px 0 40px;
+            padding-top: 48px;
 
             display: flex;
             justify-content: space-between;
@@ -37,20 +51,22 @@
         }
 
         .name {
-            font-size: 32px;
+            font-size: 36px;
             letter-spacing: 1.2px;
+            white-space: nowrap;
         }
 
         .nav {
             display: flex;
-            gap: 28px;
+            gap: 30px;
+            align-items: center;
         }
 
         .nav a {
             color: #222222;
             text-decoration: none;
 
-            font-size: 16px;
+            font-size: 17px;
         }
 
         .nav a:hover {
@@ -61,50 +77,69 @@
             border-bottom: 1px solid #222222;
         }
 
-        /* ------------------------------
-           Main Layout
-        ------------------------------ */
 
-      .main {
-    max-width: 1000px;
-    margin: 100px auto 90px auto;
-    padding: 0 40px;
+        /* ==============================
+           MAIN LAYOUT
+        ============================== */
 
-    display: grid;
-    grid-template-columns: 340px 1fr;
-    gap: 70px;
-    align-items: start;
-}
+        .main {
+            width: 88%;
+            max-width: 1320px;
 
-        /* ------------------------------
-           Photo
-        ------------------------------ */
+            margin: 105px auto 100px auto;
+
+            display: grid;
+
+            grid-template-columns: 440px minmax(0, 720px);
+
+            gap: 100px;
+
+            justify-content: center;
+
+            align-items: start;
+        }
+
+
+        /* ==============================
+           PHOTO
+        ============================== */
+
+        .photo {
+            width: 440px;
+        }
 
         .photo img {
-            width: 100%;
-            max-width: 340px;
+            width: 440px;
             height: auto;
 
             display: block;
+
+            object-fit: cover;
         }
 
-        /* ------------------------------
-           About
-        ------------------------------ */
+
+        /* ==============================
+           ABOUT
+        ============================== */
+
+        .about {
+            width: 100%;
+        }
 
         .about h2 {
-            font-size: 21px;
+            font-size: 24px;
             font-weight: normal;
 
             margin-top: 0;
-            margin-bottom: 32px;
+            margin-bottom: 38px;
         }
 
         .about p {
-            font-size: 19px;
+            font-size: 21px;
+            line-height: 1.72;
 
             margin-top: 0;
-            margin-bottom: 19px;
+            margin-bottom: 21px;
         }
 
         .about a {
@@ -116,26 +151,100 @@
             text-decoration: underline;
         }
 
-        /* ------------------------------
-           Contact
-        ------------------------------ */
+
+        /* ==============================
+           CONTACT
+        ============================== */
 
         .contact {
-            margin-top: 30px;
+            margin-top: 32px;
         }
 
         .contact p {
-            font-size: 16px;
+            font-size: 17px;
+
+            margin-top: 0;
             margin-bottom: 8px;
         }
 
-        /* ------------------------------
-           Mobile
-        ------------------------------ */
+
+        /* ==============================
+           LARGE DESKTOP
+        ============================== */
+
+        @media (min-width: 1600px) {
+
+            .header {
+                max-width: 1450px;
+            }
+
+            .main {
+                max-width: 1400px;
+
+                grid-template-columns: 460px minmax(0, 760px);
+
+                gap: 110px;
+            }
+
+            .photo {
+                width: 460px;
+            }
+
+            .photo img {
+                width: 460px;
+            }
+
+            .about p {
+                font-size: 22px;
+            }
+
+            .about h2 {
+                font-size: 25px;
+            }
+        }
+
+
+        /* ==============================
+           TABLET
+        ============================== */
+
+        @media (max-width: 1000px) {
+
+            .header {
+                width: 92%;
+            }
+
+            .main {
+                width: 90%;
+
+                grid-template-columns: 360px 1fr;
+
+                gap: 60px;
+            }
+
+            .photo {
+                width: 360px;
+            }
+
+            .photo img {
+                width: 360px;
+            }
+
+            .about p {
+                font-size: 19px;
+            }
+        }
+
+
+        /* ==============================
+           MOBILE
+        ============================== */
 
         @media (max-width: 780px) {
 
             .header {
+                width: calc(100% - 40px);
+
                 flex-direction: column;
 
                 gap: 20px;
@@ -144,38 +253,43 @@
             }
 
             .name {
-                font-size: 29px;
+                font-size: 31px;
             }
 
             .nav {
                 gap: 18px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             .nav a {
-                font-size: 14px;
+                font-size: 15px;
             }
 
             .main {
+                width: calc(100% - 46px);
+
                 grid-template-columns: 1fr;
 
-                margin-top: 70px;
+                margin-top: 65px;
 
                 gap: 45px;
-
-                padding: 0 25px;
             }
 
             .photo {
+                width: 100%;
                 text-align: center;
             }
 
             .photo img {
-                max-width: 300px;
+                width: 100%;
+                max-width: 360px;
+
                 margin: 0 auto;
             }
 
             .about h2 {
-                font-size: 20px;
+                font-size: 22px;
             }
 
             .about p {
@@ -183,18 +297,20 @@
             }
 
             .contact p {
-                font-size: 15px;
+                font-size: 16px;
             }
         }
+
     </style>
 </head>
 
 
 <body>
 
+
     <!-- ==============================
-         Header
-    =============================== -->
+         HEADER
+    ============================== -->
 
     <header class="header">
 
@@ -202,9 +318,11 @@
             JING TAO
         </div>
 
+
         <nav class="nav">
 
-            <a href="index.html" class="active">
+            <a href="index.html"
+               class="active">
                 HOME
             </a>
 
@@ -225,38 +343,46 @@
     </header>
 
 
+
     <!-- ==============================
-         Main Content
-    =============================== -->
+         MAIN CONTENT
+    ============================== -->
 
     <main class="main">
 
-        <!-- Photo -->
+
+        <!-- PHOTO -->
 
         <div class="photo">
 
             <img
-                src="HEADSHOT_JINGTAO.jpg"
+                src="HEADSHOT_JINGTAO.png"
                 alt="Jing Tao"
             >
 
         </div>
 
 
-        <!-- About -->
+
+        <!-- ABOUT -->
 
         <div class="about">
 
-            <h2>ABOUT</h2>
+            <h2>
+                ABOUT
+            </h2>
+
 
             <p>
                 Welcome to my page!
             </p>
 
+
             <p>
                 I am a Ph.D. candidate in Political Science at
                 The University of Texas at Dallas.
             </p>
+
 
             <p>
                 My research focuses on comparative politics,
@@ -265,12 +391,14 @@
                 misinformation, public opinion, and political trust.
             </p>
 
+
             <p>
                 My current research examines how digital technologies,
                 information environments, and cyber events shape
                 political attitudes, institutional trust, and
                 government behavior across countries.
             </p>
+
 
             <p>
                 Methodologically, I use causal inference,
@@ -279,7 +407,8 @@
             </p>
 
 
-            <!-- Contact -->
+
+            <!-- CONTACT -->
 
             <div class="contact">
 
@@ -290,20 +419,27 @@
                     </a>
                 </p>
 
+
                 <p>
 
                     <a
                         href="https://www.linkedin.com/in/jing-tao-2b634b23a/"
                         target="_blank">
+
                         LinkedIn
+
                     </a>
 
-                    &nbsp; | &nbsp;
+
+                    &nbsp;&nbsp; | &nbsp;&nbsp;
+
 
                     <a
                         href="https://github.com/JingUSA"
                         target="_blank">
+
                         GitHub
+
                     </a>
 
                 </p>
@@ -313,6 +449,7 @@
         </div>
 
     </main>
+
 
 </body>
 
