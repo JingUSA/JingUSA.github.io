@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jing Tao</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #ffffff;
+            color: #222;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.65;
+        }
+
+        .header {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 30px 0 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav a {
+            color: #222;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .nav a:hover {
+            border-bottom: 1px solid #222;
+        }
+
+        .nav a.active {
+            border-bottom: 1px solid #222;
+        }
+
+        .main {
+            max-width: 900px;
+            margin: 130px auto 80px auto;
+            padding: 0 30px;
+
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .photo img {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            display: block;
+        }
+
+        .about h2 {
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .about p {
+            font-size: 17px;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        .about a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        .about a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            margin-top: 28px;
+            font-size: 14px;
+        }
+
+        .contact p {
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+
+        @media (max-width: 760px) {
+
+            .header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            .main {
+                grid-template-columns: 1fr;
+                margin-top: 70px;
+                gap: 40px;
+            }
+
+            .photo img {
+                max-width: 280px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="name">
+            JING TAO
+        </div>
+
+        <nav class="nav">
+            <a href="index.html" class="active">HOME</a>
+            <a href="#">CV</a>
+            <a href="#">RESEARCH</a>
+            <a href="#">TEACHING</a>
+        </nav>
+
+    </header>
+
+
+    <main class="main">
+
+        <div class="photo">
+
+            <img
+                src="HEADSHOT_JINGTAO.jpg"
+                alt="Jing Tao"
+            >
+
+        </div>
+
+
+        <div class="about">
+
+            <h2>ABOUT</h2>
+
+            <p>
+                Welcome to my page!
+            </p>
+
+            <p>
+                I am a Ph.D. candidate in Political Science at
+                The University of Texas at Dallas.
+            </p>
+
+            <p>
+                My research lies at the intersection of comparative politics,
+                digital politics, and political methodology, with a particular
+                focus on artificial intelligence, cybersecurity, misinformation,
+                public opinion, and political trust.
+            </p>
+
+            <p>
+                My current research examines how digital technologies,
+                information environments, and cyber events shape political
+                attitudes, institutional trust, and government behavior across
+                countries.
+            </p>
+
+            <p>
+                Methodologically, I use causal inference, survey experiments,
+                computational social science, and quantitative methods.
+            </p>
+
+            <div class="contact">
+
+                <p>
+                    Contact:
+                    <a href="mailto:Jing.Tao@UTDallas.edu">
+                        Jing.Tao@UTDallas.edu
+                    </a>
+                </p>
+
+                <p>
+                    <a
+                        href="https://www.linkedin.com/in/jing-tao-2b634b23a/"
+                        target="_blank">
+                        LinkedIn
+                    </a>
+
+                    &nbsp; | &nbsp;
+
+                    <a
+                        href="https://github.com/JingUSA"
+                        target="_blank">
+                        GitHub
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
