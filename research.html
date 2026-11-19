@@ -1,13 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Research | Jing Tao</title>
 
+    <!-- INTER FONT -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <style>
+
+        /* ==============================
+           GENERAL
+        ============================== */
+
         * {
             box-sizing: border-box;
         }
@@ -16,13 +36,23 @@
             margin: 0;
             background: #ffffff;
             color: #222222;
-            font-family: Georgia, "Times New Roman", serif;
+
+            font-family:
+                'Inter', Arial, Helvetica, sans-serif;
+
+            font-weight: 400;
             line-height: 1.7;
         }
+
+
+        /* ==============================
+           HEADER
+        ============================== */
 
         .header {
             width: 90%;
             max-width: 1380px;
+
             margin: 0 auto;
             padding-top: 48px;
 
@@ -33,18 +63,23 @@
 
         .name {
             font-size: 36px;
+            font-weight: 700;
             letter-spacing: 1.2px;
+            white-space: nowrap;
         }
 
         .nav {
             display: flex;
             gap: 30px;
+            align-items: center;
         }
 
         .nav a {
             color: #222222;
             text-decoration: none;
+
             font-size: 17px;
+            font-weight: 500;
         }
 
         .nav a:hover,
@@ -52,24 +87,37 @@
             border-bottom: 1px solid #222222;
         }
 
+
+        /* ==============================
+           MAIN CONTENT
+        ============================== */
+
         .content {
             width: 88%;
             max-width: 1200px;
+
             margin: 100px auto;
         }
 
         h1 {
             font-size: 30px;
-            font-weight: normal;
+            font-weight: 600;
+
             margin-bottom: 50px;
         }
 
         h2 {
             font-size: 22px;
-            font-weight: normal;
+            font-weight: 600;
+
             margin-top: 45px;
             margin-bottom: 20px;
         }
+
+
+        /* ==============================
+           RESEARCH PAPERS
+        ============================== */
 
         .paper {
             margin-bottom: 30px;
@@ -77,17 +125,21 @@
 
         .paper-title {
             font-size: 21px;
-            font-weight: bold;
+            font-weight: 700;
         }
 
         .paper-meta {
             font-size: 17px;
+            font-weight: 400;
             font-style: italic;
+
             margin-top: 4px;
         }
 
         .paper-desc {
             font-size: 18px;
+            font-weight: 400;
+
             margin-top: 8px;
             max-width: 950px;
         }
@@ -96,10 +148,24 @@
             color: #222222;
         }
 
+
+        /* ==============================
+           MOBILE
+        ============================== */
+
         @media (max-width: 780px) {
+
             .header {
+                width: calc(100% - 40px);
+
                 flex-direction: column;
                 gap: 20px;
+
+                padding-top: 30px;
+            }
+
+            .name {
+                font-size: 31px;
             }
 
             .nav {
@@ -108,145 +174,213 @@
                 justify-content: center;
             }
 
+            .nav a {
+                font-size: 15px;
+            }
+
             .content {
                 width: calc(100% - 45px);
                 margin-top: 65px;
             }
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-<header class="header">
+    <!-- ==============================
+         HEADER
+    ============================== -->
 
-    <div class="name">
-        JING TAO
-    </div>
+    <header class="header">
 
-    <nav class="nav">
-        <a href="index.html">HOME</a>
-        <a href="JING_TAO_CV.pdf" target="_blank">CV</a>
-        <a href="research.html" class="active">RESEARCH</a>
-        <a href="teaching.html">TEACHING</a>
-    </nav>
-
-</header>
-
-
-<main class="content">
-
-    <h1>RESEARCH</h1>
-
-
-    <h2>Revise and Resubmit</h2>
-
-    <div class="paper">
-        <div class="paper-title">
-            Unpacking Cyber Deterrence under the Budapest Convention: Punishment, Denial, and Entanglement
+        <div class="name">
+            JING TAO
         </div>
 
-        <div class="paper-meta">
-            Humza Khan, Jing Tao and Pengfei Zhang
-            · R&amp;R at Journal of Cyber Policy
-        </div>
-    </div>
+        <nav class="nav">
 
-
-  
-<h2>Under Review</h2>
-
-<div class="paper">
-    <div class="paper-title">
-        When Cyber Espionage Becomes Public: Disclosure and Institutional Confidence across Political Regimes
-    </div>
-
-    <div class="paper-meta">
-        Jing Tao · Under review at Politics & Policy
-    </div>
-</div>
-
-<div class="paper">
-    <div class="paper-title">
-        Ruling by Money: Fiscal Centralization and Authoritarian Resilience in Post-Reform China
-    </div>
-
-    <div class="paper-meta">
-        Jing Tao · Under review at Asian Politics &amp; Policy
-    </div>
-</div>
-    
-<div class="paper">
-    <div class="paper-title">
-        From Enforcement to Symbolism: Border Arrests, Tunnels, and Trump's 2024 Vote Share
-    </div>
-
-    <div class="paper-meta">
-        Jing Tao · Under review at Border and Regional Studies
-    </div>
-</div>
-</div>
-
-    
-
-
-    <h2>Working Papers</h2>
-
-    <div class="paper">
-        <div class="paper-title">
-            Holding AI Liable?
-            An Experimental Study of Public Opinion on AI Safety
-        </div>
-
-        <div class="paper-meta">
-            Jing Tao
-        </div>
-    </div>
-
-
-    <div class="paper">
-        <div class="paper-title">
-            From Ambition to Action: National AI Strategies and Downstream Policymaking
-        </div>
-
-        <div class="paper-meta">
-            Jing Tao
-        </div>
-    </div>
-
-
-    <h2>Computational Projects</h2>
-
-    <div class="paper">
-        <div class="paper-title">
-            Cyber Operations Incident Database (COID)
-        </div>
-
-        <div class="paper-desc">
-            A normalized relational database for cross-national analysis
-            of state-sponsored cyber activity.
-            <a href="https://github.com/JingUSA/COID" target="_blank">
-                GitHub Repository
+            <a href="index.html">
+                HOME
             </a>
-        </div>
-    </div>
 
-
-    <div class="paper">
-        <div class="paper-title">
-            The Cyber Conflict Globe:
-            Dynamic 3D Visualization of State-Linked Operations, 2005–2023
-        </div>
-
-        <div class="paper-desc">
-            Interactive spatial-temporal visualization of state-linked cyber operations.
-            <a href="https://www.youtube.com/watch?v=7BMBoaasoTU" target="_blank">
-                Video Demo
+            <a href="JING_TAO_CV.pdf"
+               target="_blank">
+                CV
             </a>
-        </div>
-    </div>
 
-</main>
+            <a href="research.html"
+               class="active">
+                RESEARCH
+            </a>
+
+            <a href="teaching.html">
+                TEACHING
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==============================
+         MAIN CONTENT
+    ============================== -->
+
+    <main class="content">
+
+        <h1>RESEARCH</h1>
+
+
+        <!-- ==============================
+             REVISE AND RESUBMIT
+        ============================== -->
+
+        <h2>Revise and Resubmit</h2>
+
+        <div class="paper">
+
+            <div class="paper-title">
+                Unpacking Cyber Deterrence under the Budapest Convention: Punishment, Denial, and Entanglement
+            </div>
+
+            <div class="paper-meta">
+                Humza Khan, Jing Tao and Pengfei Zhang
+                · R&amp;R at Journal of Cyber Policy
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             UNDER REVIEW
+        ============================== -->
+
+        <h2>Under Review</h2>
+
+        <div class="paper">
+
+            <div class="paper-title">
+                When Cyber Espionage Becomes Public: Disclosure and Institutional Confidence across Political Regimes
+            </div>
+
+            <div class="paper-meta">
+                Jing Tao · Under review at Politics &amp; Policy
+            </div>
+
+        </div>
+
+
+        <div class="paper">
+
+            <div class="paper-title">
+                Ruling by Money: Fiscal Centralization and Authoritarian Resilience in Post-Reform China
+            </div>
+
+            <div class="paper-meta">
+                Jing Tao · Under review at Asian Politics &amp; Policy
+            </div>
+
+        </div>
+
+
+        <div class="paper">
+
+            <div class="paper-title">
+                From Enforcement to Symbolism: Border Arrests, Tunnels, and Trump's 2024 Vote Share
+            </div>
+
+            <div class="paper-meta">
+                Jing Tao · Under review at Border and Regional Studies
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             WORKING PAPERS
+        ============================== -->
+
+        <h2>Working Papers</h2>
+
+
+        <div class="paper">
+
+            <div class="paper-title">
+                Holding AI Liable?
+                An Experimental Study of Public Opinion on AI Safety
+            </div>
+
+            <div class="paper-meta">
+                Jing Tao
+            </div>
+
+        </div>
+
+
+        <div class="paper">
+
+            <div class="paper-title">
+                From Ambition to Action: National AI Strategies and Downstream Policymaking
+            </div>
+
+            <div class="paper-meta">
+                Jing Tao
+            </div>
+
+        </div>
+
+
+        <!-- ==============================
+             COMPUTATIONAL PROJECTS
+        ============================== -->
+
+        <h2>Computational Projects</h2>
+
+
+        <div class="paper">
+
+            <div class="paper-title">
+                Cyber Operations Incident Database (COID)
+            </div>
+
+            <div class="paper-desc">
+                A normalized relational database for cross-national analysis
+                of state-sponsored cyber activity.
+
+                <a href="https://github.com/JingUSA/COID"
+                   target="_blank">
+                    GitHub Repository
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="paper">
+
+            <div class="paper-title">
+                The Cyber Conflict Globe:
+                Dynamic 3D Visualization of State-Linked Operations, 2005–2023
+            </div>
+
+            <div class="paper-desc">
+                Interactive spatial-temporal visualization of state-linked cyber operations.
+
+                <a href="https://www.youtube.com/watch?v=7BMBoaasoTU"
+                   target="_blank">
+                    Video Demo
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
 
 </body>
 
