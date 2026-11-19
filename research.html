@@ -4,7 +4,6 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
@@ -24,9 +23,7 @@
 
     <style>
 
-        /* ==============================
-           GENERAL
-        ============================== */
+        /* GENERAL */
 
         * {
             box-sizing: border-box;
@@ -36,25 +33,19 @@
             margin: 0;
             background: #ffffff;
             color: #222222;
-
-            font-family:
-                'Inter', Arial, Helvetica, sans-serif;
-
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
             font-weight: 400;
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
 
-        /* ==============================
-           HEADER
-        ============================== */
+        /* HEADER - SAME AS HOME */
 
         .header {
             width: 90%;
-            max-width: 1380px;
-
+            max-width: 1280px;
             margin: 0 auto;
-            padding-top: 48px;
+            padding-top: 30px;
 
             display: flex;
             justify-content: space-between;
@@ -62,7 +53,7 @@
         }
 
         .name {
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 700;
             letter-spacing: 1.2px;
             white-space: nowrap;
@@ -70,15 +61,14 @@
 
         .nav {
             display: flex;
-            gap: 30px;
+            gap: 28px;
             align-items: center;
         }
 
         .nav a {
             color: #222222;
             text-decoration: none;
-
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 500;
         }
 
@@ -88,58 +78,52 @@
         }
 
 
-        /* ==============================
-           MAIN CONTENT
-        ============================== */
+        /* MAIN CONTENT - SAME WIDTH AS HOME */
 
         .content {
             width: 88%;
-            max-width: 1200px;
-
-            margin: 100px auto;
+            max-width: 1180px;
+            margin: 60px auto 60px auto;
         }
 
         h1 {
-            font-size: 30px;
+            font-size: 28px;
             font-weight: 600;
-
-            margin-bottom: 50px;
+            margin-top: 0;
+            margin-bottom: 40px;
         }
 
-        h2 {
-            font-size: 22px;
-            font-weight: 600;
+        /* SECTION HEADINGS - NOT BOLD */
 
-            margin-top: 45px;
+        h2 {
+            font-size: 21px;
+            font-weight: 400;
+            margin-top: 40px;
             margin-bottom: 20px;
         }
 
 
-        /* ==============================
-           RESEARCH PAPERS
-        ============================== */
+        /* RESEARCH PAPERS */
 
         .paper {
             margin-bottom: 30px;
         }
 
         .paper-title {
-            font-size: 21px;
+            font-size: 19px;
             font-weight: 700;
         }
 
         .paper-meta {
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 400;
             font-style: italic;
-
             margin-top: 4px;
         }
 
         .paper-desc {
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 400;
-
             margin-top: 8px;
             max-width: 950px;
         }
@@ -149,23 +133,59 @@
         }
 
 
-        /* ==============================
-           MOBILE
-        ============================== */
+        /* BLUE LINKS - COMPUTATIONAL PROJECTS */
+
+        .paper-desc a {
+            color: #0066CC;
+            text-decoration: underline;
+        }
+
+        .paper-desc a:hover {
+            color: #004F9F;
+        }
+
+
+        /* LARGE DESKTOP - SAME AS HOME */
+
+        @media (min-width: 1600px) {
+
+            .header {
+                max-width: 1380px;
+            }
+
+            .content {
+                max-width: 1250px;
+            }
+        }
+
+
+        /* TABLET */
+
+        @media (max-width: 1100px) {
+
+            .header {
+                width: 92%;
+            }
+
+            .content {
+                width: 90%;
+            }
+        }
+
+
+        /* MOBILE */
 
         @media (max-width: 780px) {
 
             .header {
                 width: calc(100% - 40px);
-
                 flex-direction: column;
                 gap: 20px;
-
-                padding-top: 30px;
+                padding-top: 25px;
             }
 
             .name {
-                font-size: 31px;
+                font-size: 30px;
             }
 
             .nav {
@@ -175,25 +195,43 @@
             }
 
             .nav a {
-                font-size: 15px;
+                font-size: 14px;
             }
 
             .content {
-                width: calc(100% - 45px);
-                margin-top: 65px;
+                width: calc(100% - 46px);
+                margin-top: 45px;
+                margin-bottom: 50px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .paper-title {
+                font-size: 18px;
+            }
+
+            .paper-meta {
+                font-size: 15px;
+            }
+
+            .paper-desc {
+                font-size: 16px;
             }
         }
 
     </style>
-
 </head>
 
 
 <body>
 
-    <!-- ==============================
-         HEADER
-    ============================== -->
+    <!-- HEADER -->
 
     <header class="header">
 
@@ -226,18 +264,14 @@
     </header>
 
 
-    <!-- ==============================
-         MAIN CONTENT
-    ============================== -->
+    <!-- MAIN CONTENT -->
 
     <main class="content">
 
         <h1>RESEARCH</h1>
 
 
-        <!-- ==============================
-             REVISE AND RESUBMIT
-        ============================== -->
+        <!-- REVISE AND RESUBMIT -->
 
         <h2>Revise and Resubmit</h2>
 
@@ -255,9 +289,7 @@
         </div>
 
 
-        <!-- ==============================
-             UNDER REVIEW
-        ============================== -->
+        <!-- UNDER REVIEW -->
 
         <h2>Under Review</h2>
 
@@ -300,12 +332,9 @@
         </div>
 
 
-        <!-- ==============================
-             WORKING PAPERS
-        ============================== -->
+        <!-- WORKING PAPERS -->
 
         <h2>Working Papers</h2>
-
 
         <div class="paper">
 
@@ -334,12 +363,9 @@
         </div>
 
 
-        <!-- ==============================
-             COMPUTATIONAL PROJECTS
-        ============================== -->
+        <!-- COMPUTATIONAL PROJECTS -->
 
         <h2>Computational Projects</h2>
-
 
         <div class="paper">
 
@@ -352,10 +378,10 @@
                 of state-sponsored cyber activity.
 
                 <a href="https://github.com/JingUSA/COID"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     GitHub Repository
                 </a>
-
             </div>
 
         </div>
@@ -372,10 +398,10 @@
                 Interactive spatial-temporal visualization of state-linked cyber operations.
 
                 <a href="https://www.youtube.com/watch?v=7BMBoaasoTU"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     Video Demo
                 </a>
-
             </div>
 
         </div>
