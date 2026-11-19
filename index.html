@@ -41,7 +41,7 @@
                 'Inter', Arial, Helvetica, sans-serif;
 
             font-weight: 400;
-            line-height: 1.7;
+            line-height: 1.6;
         }
 
 
@@ -51,11 +51,10 @@
 
         .header {
             width: 90%;
-            max-width: 1380px;
+            max-width: 1280px;
 
             margin: 0 auto;
-
-            padding-top: 48px;
+            padding-top: 30px;
 
             display: flex;
             justify-content: space-between;
@@ -63,7 +62,7 @@
         }
 
         .name {
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 700;
             letter-spacing: 1.2px;
             white-space: nowrap;
@@ -71,7 +70,7 @@
 
         .nav {
             display: flex;
-            gap: 30px;
+            gap: 28px;
             align-items: center;
         }
 
@@ -79,14 +78,11 @@
             color: #222222;
             text-decoration: none;
 
-            font-size: 17px;
+            font-size: 15px;
             font-weight: 500;
         }
 
-        .nav a:hover {
-            border-bottom: 1px solid #222222;
-        }
-
+        .nav a:hover,
         .nav a.active {
             border-bottom: 1px solid #222222;
         }
@@ -98,18 +94,18 @@
 
         .main {
             width: 88%;
-            max-width: 1320px;
+            max-width: 1180px;
 
-            margin: 105px auto 100px auto;
+            margin: 60px auto 60px auto;
 
             display: grid;
 
-            grid-template-columns: 440px minmax(0, 720px);
+            grid-template-columns:
+                360px minmax(0, 720px);
 
-            gap: 100px;
+            gap: 75px;
 
             justify-content: center;
-
             align-items: start;
         }
 
@@ -119,15 +115,14 @@
         ============================== */
 
         .photo {
-            width: 440px;
+            width: 100%;
         }
 
         .photo img {
-            width: 440px;
+            width: 100%;
             height: auto;
 
             display: block;
-
             object-fit: cover;
         }
 
@@ -138,23 +133,24 @@
 
         .about {
             width: 100%;
+            min-width: 0;
         }
 
         .about h2 {
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 600;
 
             margin-top: 0;
-            margin-bottom: 38px;
+            margin-bottom: 25px;
         }
 
         .about p {
-            font-size: 21px;
+            font-size: 18px;
             font-weight: 400;
-            line-height: 1.72;
+            line-height: 1.6;
 
             margin-top: 0;
-            margin-bottom: 21px;
+            margin-bottom: 15px;
         }
 
         .about a {
@@ -172,14 +168,39 @@
         ============================== */
 
         .contact {
-            margin-top: 32px;
+            margin-top: 25px;
         }
 
         .contact p {
-            font-size: 17px;
+            font-size: 16px;
 
             margin-top: 0;
-            margin-bottom: 8px;
+            margin-bottom: 7px;
+        }
+
+
+        /* ==============================
+           BLUE LINKS
+        ============================== */
+
+        /* Email */
+        .contact a[href^="mailto:"] {
+            color: #0066CC;
+        }
+
+        /* LinkedIn */
+        .contact a[href*="linkedin.com"] {
+            color: #0066CC;
+        }
+
+        /* GitHub remains black */
+        .contact a[href*="github.com"] {
+            color: #222222;
+        }
+
+        /* Underline on hover */
+        .contact a:hover {
+            text-decoration: underline;
         }
 
 
@@ -190,31 +211,24 @@
         @media (min-width: 1600px) {
 
             .header {
-                max-width: 1450px;
+                max-width: 1380px;
             }
 
             .main {
-                max-width: 1400px;
+                max-width: 1250px;
 
-                grid-template-columns: 460px minmax(0, 760px);
+                grid-template-columns:
+                    380px minmax(0, 740px);
 
-                gap: 110px;
-            }
-
-            .photo {
-                width: 460px;
-            }
-
-            .photo img {
-                width: 460px;
+                gap: 85px;
             }
 
             .about p {
-                font-size: 22px;
+                font-size: 19px;
             }
 
             .about h2 {
-                font-size: 25px;
+                font-size: 23px;
             }
         }
 
@@ -223,7 +237,7 @@
            TABLET
         ============================== */
 
-        @media (max-width: 1000px) {
+        @media (max-width: 1100px) {
 
             .header {
                 width: 92%;
@@ -232,21 +246,15 @@
             .main {
                 width: 90%;
 
-                grid-template-columns: 360px 1fr;
+                grid-template-columns:
+                    minmax(250px, 320px)
+                    minmax(0, 1fr);
 
-                gap: 60px;
-            }
-
-            .photo {
-                width: 360px;
-            }
-
-            .photo img {
-                width: 360px;
+                gap: 45px;
             }
 
             .about p {
-                font-size: 19px;
+                font-size: 17px;
             }
         }
 
@@ -261,14 +269,13 @@
                 width: calc(100% - 40px);
 
                 flex-direction: column;
-
                 gap: 20px;
 
-                padding-top: 30px;
+                padding-top: 25px;
             }
 
             .name {
-                font-size: 31px;
+                font-size: 30px;
             }
 
             .nav {
@@ -278,7 +285,7 @@
             }
 
             .nav a {
-                font-size: 15px;
+                font-size: 14px;
             }
 
             .main {
@@ -286,9 +293,10 @@
 
                 grid-template-columns: 1fr;
 
-                margin-top: 65px;
+                margin-top: 45px;
+                margin-bottom: 50px;
 
-                gap: 45px;
+                gap: 35px;
             }
 
             .photo {
@@ -298,21 +306,23 @@
 
             .photo img {
                 width: 100%;
-                max-width: 360px;
+                max-width: 340px;
 
                 margin: 0 auto;
             }
 
             .about h2 {
-                font-size: 22px;
+                font-size: 21px;
+                margin-bottom: 20px;
             }
 
             .about p {
-                font-size: 18px;
+                font-size: 17px;
+                line-height: 1.65;
             }
 
             .contact p {
-                font-size: 16px;
+                font-size: 15px;
             }
         }
 
@@ -321,7 +331,6 @@
 
 
 <body>
-
 
     <!-- ==============================
          HEADER
@@ -333,7 +342,6 @@
             JING TAO
         </div>
 
-
         <nav class="nav">
 
             <a href="index.html"
@@ -341,7 +349,8 @@
                 HOME
             </a>
 
-            <a href="JING_TAO_CV.pdf" target="_blank">
+            <a href="JING_TAO_CV.pdf"
+               target="_blank">
                 CV
             </a>
 
@@ -358,13 +367,11 @@
     </header>
 
 
-
     <!-- ==============================
          MAIN CONTENT
     ============================== -->
 
     <main class="main">
-
 
         <!-- PHOTO -->
 
@@ -378,7 +385,6 @@
         </div>
 
 
-
         <!-- ABOUT -->
 
         <div class="about">
@@ -387,17 +393,14 @@
                 ABOUT
             </h2>
 
-
             <p>
                 Welcome to my page!
             </p>
-
 
             <p>
                 I am a Ph.D. candidate in Political Science at
                 The University of Texas at Dallas. I also serve as an Editorial Assistant for <em>Political Analysis</em>, assisting with manuscript processing, reviewer identification, and computational replication checks.
             </p>
-
 
             <p>
                 My research focuses on comparative politics,
@@ -406,11 +409,9 @@
                 misinformation, public opinion, and political trust.
             </p>
 
-
             <p>
                 My current research examines how cyber espionage disclosures shape institutional confidence, how citizens assign responsibility for harmful AI systems, and how national AI strategies influence subsequent government policymaking.
             </p>
-
 
             <p>
                 Methodologically, I use causal inference,
@@ -419,8 +420,9 @@
             </p>
 
 
-
-            <!-- CONTACT -->
+            <!-- ==============================
+                 CONTACT
+            ============================== -->
 
             <div class="contact">
 
@@ -430,7 +432,6 @@
                         Jing.Tao@UTDallas.edu
                     </a>
                 </p>
-
 
                 <p>
 
@@ -442,9 +443,7 @@
 
                     </a>
 
-
                     &nbsp;&nbsp; | &nbsp;&nbsp;
-
 
                     <a
                         href="https://github.com/JingUSA"
@@ -461,7 +460,6 @@
         </div>
 
     </main>
-
 
 </body>
 
